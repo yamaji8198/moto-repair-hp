@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>モトリペア | バイク修理・整備</title>
+
+<style>
+
+* {
+
+  box-sizing: border-box;
+
+}
+
+body {
+
+  margin: 0;
+
+  font-family:
+
+    -apple-system,
+
+    BlinkMacSystemFont,
+
+    "Hiragino Kaku Gothic ProN",
+
+    "Yu Gothic",
+
+    Meiryo,
+
+    sans-serif;
+
+  color: #222;
+
+  background: #f5f5f5;
+
+  line-height: 1.8;
+
+}
+
+header {
+
+  background: #111;
+
+  color: white;
+
+  padding: 18px 20px;
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 10;
+
+}
+
+.header-inner {
+
+  max-width: 1100px;
+
+  margin: auto;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+}
+
+.logo {
+
+  font-size: 24px;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
+
+}
+
+nav a {
+
+  color: white;
+
+  text-decoration: none;
+
+  margin-left: 18px;
+
+  font-size: 14px;
+
+}
+
+.hero {
+
+  background: linear-gradient(135deg, #111 0%, #333 100%);
+
+  color: white;
+
+  text-align: center;
+
+  padding: 80px 20px;
+
+}
+
+.hero h1 {
+
+  font-size: clamp(32px, 7vw, 60px);
+
+  line-height: 1.25;
+
+  margin: 0 0 20px;
+
+}
+
+.hero p {
+
+  font-size: 18px;
+
+  margin-bottom: 30px;
+
+}
+
+.button {
+
+  display: inline-block;
+
+  background: #e60012;
+
+  color: white;
+
+  text-decoration: none;
+
+  padding: 14px 28px;
+
+  border-radius: 8px;
+
+  font-weight: bold;
+
+}
+
+section {
+
+  max-width: 1100px;
+
+  margin: auto;
+
+  padding: 70px 20px;
+
+}
+
+.section-title {
+
+  text-align: center;
+
+  margin-bottom: 45px;
+
+}
+
+.section-title h2 {
+
+  font-size: 32px;
+
+  margin-bottom: 8px;
+
+}
+
+.cards {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+
+  gap: 20px;
+
+}
+
+.card {
+
+  background: white;
+
+  padding: 28px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+
+}
+
+.card h3 {
+
+  margin-top: 0;
+
+  font-size: 21px;
+
+}
+
+.highlight {
+
+  background: #fff;
+
+  border-left: 6px solid #e60012;
+
+  padding: 30px;
+
+  border-radius: 8px;
+
+}
+
+.price {
+
+  font-size: 28px;
+
+  font-weight: bold;
+
+}
+
+.contact {
+
+  background: #111;
+
+  color: white;
+
+  text-align: center;
+
+}
+
+.contact h2 {
+
+  font-size: 32px;
+
+}
+
+.contact .button {
+
+  background: #e60012;
+
+}
+
+footer {
+
+  background: #000;
+
+  color: #aaa;
+
+  text-align: center;
+
+  padding: 25px 15px;
+
+  font-size: 13px;
+
+}
+
+@media (max-width: 700px) {
+
+  nav {
+
+    display: none;
+
+  }
+
+  .hero {
+
+    padding: 60px 18px;
+
+  }
+
+  section {
+
+    padding: 50px 18px;
+
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+  <div class="header-inner">
+
+    <div class="logo">MOTO REPAIR</div>
+
+    <nav>
+
+      <a href="#about">特徴</a>
+
+      <a href="#service">修理・整備</a>
+
+      <a href="#contact">お問い合わせ</a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+<main>
+
+<section class="hero">
+
+  <h1>修理難民、歓迎。</h1>
+
+  <p>
+
+    バイクの「困った」を、分かる言葉で解決します。<br>
+
+    初心者の方も、他店で断られた方もご相談ください。
+
+  </p>
+
+  <a class="button" href="#contact">修理について相談する</a>
+
+</section>
+
+<section id="about">
+
+  <div class="section-title">
+
+    <h2>モトリペアについて</h2>
+
+    <p>バイクを長く安心して乗るための整備を。</p>
+
+  </div>
+
+  <div class="highlight">
+
+    <h3>経験と技術を、あなたのバイクに。</h3>
+
+    <p>
+
+      エンジンや電装系のトラブルから、
+
+      日常のメンテナンスまで幅広く対応します。
+
+    </p>
+
+    <p>
+
+      「何が悪いのか分からない」
+
+      「他のお店で修理を断られた」
+
+      「できるだけ分かりやすく説明してほしい」
+
+      という方もお気軽にご相談ください。
+
+    </p>
+
+  </div>
+
+</section>
+
+<section id="service">
+
+  <div class="section-title">
+
+    <h2>修理・整備</h2>
+
+    <p>こんな症状でお困りではありませんか？</p>
+
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+
+      <h3>🔧 エンジン</h3>
+
+      <p>
+
+        エンジンがかからない、異音がする、
+
+        調子が悪いなどのトラブルを点検します。
+
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>⚡ 電装・電気系</h3>
+
+      <p>
+
+        バッテリー、スターター、
+
+        灯火類などの電気系統を点検します。
+
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>🛞 足回り</h3>
+
+      <p>
+
+        タイヤ、ブレーキ、サスペンションなど、
+
+        安全に関わる部分を整備します。
+
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>🏍️ メンテナンス</h3>
+
+      <p>
+
+        オイル交換、点検、調整など、
+
+        バイクを良い状態に保つ整備を行います。
+
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section>
+
+  <div class="section-title">
+
+    <h2>まずはご相談ください</h2>
+
+    <p>
+
+      修理できるか分からない状態でも大丈夫です。
+
+    </p>
+
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+
+      <h3>他店で断られた</h3>
+
+      <p>
+
+        「古いバイクだから無理と言われた」
+
+        「原因が分からないと言われた」
+
+        そんなケースもご相談ください。
+
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>初心者でも安心</h3>
+
+      <p>
+
+        専門用語ばかりではなく、
+
+        できるだけ分かりやすく説明します。
+
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>まず点検したい</h3>
+
+      <p>
+
+        修理が必要なのか分からない場合も、
+
+        まず状態を確認するところから始められます。
+
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="contact" class="contact">
+
+  <h2>お問い合わせ</h2>
+
+  <p>
+
+    バイクの症状やお困りごとをお聞かせください。
+
+  </p>
+
+  <p>
+
+    電話番号・メールアドレス・LINEなどの
+
+    連絡先は、あとからここに追加できます。
+
+  </p>
+
+  <a class="button" href="mailto:example@example.com">
+
+    メールで問い合わせる
+
+  </a>
+
+</section>
+
+</main>
+
+<footer>
+
+  <p>MOTO REPAIR</p>
+
+  <p>© 2026 MOTO REPAIR. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+
+</html>
