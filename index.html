@@ -4,603 +4,117 @@
 
 <head>
 
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-  <title>バイク修理・整備専門｜初心者・修理難民のためのバイクショップ</title>
+<title>バイク修理・整備専門｜初心者・修理難民のためのバイクショップ</title>
 
-  <meta name="description"
+<meta name="description" content="初心者・修理難民の方も安心して相談できるバイク修理・整備専門ショップ。">
 
-  content="初心者・修理難民の方も安心して相談できるバイク修理・整備専門ショップ。販売ではなく修理・整備に特化。長年のレース・整備経験を活かし、一台一台に合わせた整備を行います。">
+<style>
 
-  <style>
+*{box-sizing:border-box;margin:0;padding:0}
 
-    * {
+html{scroll-behavior:smooth}
 
-      box-sizing: border-box;
+body{font-family:-apple-system,BlinkMacSystemFont,"Yu Gothic",Meiryo,sans-serif;background:#0c0c0c;color:#fff;line-height:1.8}
 
-      margin: 0;
+img{width:100%;display:block}
 
-      padding: 0;
+.container{width:min(1100px,90%);margin:auto}
 
-    }
+header{position:sticky;top:0;z-index:10;background:rgba(0,0,0,.94);border-bottom:1px solid #333}
 
-    html {
+.header-inner{max-width:1100px;margin:auto;padding:14px 5%;display:flex;justify-content:space-between;align-items:center}
 
-      scroll-behavior: smooth;
+.logo{font-size:20px;font-weight:900}.logo span,.section-title span{color:#e10600}
 
-    }
+.status{font-size:13px;background:#e10600;padding:5px 12px;border-radius:20px;font-weight:bold}
 
-    body {
+.hero{min-height:78vh;display:flex;align-items:center;background:linear-gradient(rgba(0,0,0,.42),rgba(0,0,0,.94)),url("IMG_6133.jpeg") center/cover}
 
-      font-family:
+.hero-content{max-width:780px;padding:80px 0}
 
-        -apple-system,
+.hero-tag{display:inline-block;background:#e10600;padding:7px 14px;margin-bottom:20px;font-weight:bold}
 
-        BlinkMacSystemFont,
+h1{font-size:clamp(34px,7vw,68px);line-height:1.15;font-weight:900;margin-bottom:24px}
 
-        "Hiragino Kaku Gothic ProN",
+h1 span{color:#ff2a23}
 
-        "Yu Gothic",
+.hero p{max-width:650px;font-size:clamp(16px,3vw,20px);color:#eee}
 
-        Meiryo,
+.hero-note{margin-top:30px;display:inline-block;border:1px solid #777;padding:12px 18px;font-weight:bold;background:rgba(0,0,0,.65)}
 
-        sans-serif;
+section{padding:80px 0}
 
-      background: #0c0c0c;
+.section-title{font-size:clamp(28px,6vw,46px);line-height:1.25;margin-bottom:18px;font-weight:900}
 
-      color: #ffffff;
+.lead{color:#cfcfcf;max-width:760px;margin-bottom:38px}
 
-      line-height: 1.8;
+.problem,.strength,.works{background:#151515}
 
-    }
+.problem-grid,.service-list{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 
-    img {
+.problem-card,.service-card{background:#202020;padding:28px 24px;border-top:4px solid #e10600}
 
-      max-width: 100%;
+.problem-card p,.service-card p{color:#bbb;font-size:15px}
 
-      display: block;
+.concept,.service{background:#080808}
 
-    }
+.concept-box{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
 
-    a {
+.concept-image img{height:440px;object-fit:cover}
 
-      text-decoration: none;
+.concept-text p{color:#ccc;margin-top:15px}
 
-      color: inherit;
+.strength-list{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
 
-    }
+.strength-item{padding:30px;border:1px solid #333;background:#0d0d0d}
 
-    .container {
+.number{color:#e10600;font-size:40px;font-weight:900}
 
-      width: min(1100px, 90%);
+.strength-item p{color:#bbb}
 
-      margin: auto;
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 
-    }
+.gallery figure{position:relative;overflow:hidden;background:#080808;border:1px solid #333}
 
-    /* ヘッダー */
+.gallery img{height:300px;object-fit:cover}
 
-    header {
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 16px 12px;background:linear-gradient(transparent,rgba(0,0,0,.9));font-weight:bold}
 
-      position: sticky;
+.policy{background:#e10600;text-align:center}
 
-      top: 0;
+.policy h2{font-size:clamp(28px,6vw,48px);line-height:1.3;margin-bottom:20px}
 
-      z-index: 100;
+.policy p{max-width:720px;margin:auto}
 
-      background: rgba(0,0,0,0.92);
+.contact{text-align:center;background:#111}
 
-      border-bottom: 1px solid #333;
+.contact-box{max-width:700px;margin:auto;padding:45px 25px;border:1px solid #333}
 
-      backdrop-filter: blur(10px);
+.preparing{display:inline-block;background:#333;padding:12px 25px;margin-top:25px;border-radius:5px;font-weight:bold;color:#ddd}
 
-    }
+footer{padding:35px 15px;text-align:center;color:#777;background:#050505;font-size:13px}
 
-    .header-inner {
+@media(max-width:760px){
 
-      max-width: 1100px;
+.problem-grid,.service-list,.concept-box,.strength-list{grid-template-columns:1fr}
 
-      margin: auto;
+.gallery{grid-template-columns:repeat(2,1fr)}
 
-      padding: 14px 5%;
+.gallery img{height:220px}
 
-      display: flex;
+.concept-image img{height:280px}
 
-      justify-content: space-between;
+section{padding:62px 0}
 
-      align-items: center;
+.hero-content{padding:60px 0}
 
-    }
+}
 
-    .logo {
-
-      font-size: 20px;
-
-      font-weight: 900;
-
-      letter-spacing: 1px;
-
-    }
-
-    .logo span {
-
-      color: #e10600;
-
-    }
-
-    .status {
-
-      font-size: 13px;
-
-      background: #e10600;
-
-      padding: 5px 12px;
-
-      border-radius: 20px;
-
-      font-weight: bold;
-
-    }
-
-    /* ファーストビュー */
-
-    .hero {
-
-      min-height: 78vh;
-
-      display: flex;
-
-      align-items: center;
-
-      background:
-
-        linear-gradient(
-
-          rgba(0,0,0,0.45),
-
-          rgba(0,0,0,0.95)
-
-        ),
-
-        url("IMG_6133.jpeg");
-
-      background-size: cover;
-
-      background-position: center;
-
-    }
-
-    .hero-content {
-
-      max-width: 780px;
-
-      padding: 80px 0;
-
-    }
-
-    .hero-tag {
-
-      display: inline-block;
-
-      color: #ffffff;
-
-      background: #e10600;
-
-      padding: 7px 14px;
-
-      margin-bottom: 20px;
-
-      font-size: 14px;
-
-      font-weight: bold;
-
-    }
-
-    h1 {
-
-      font-size: clamp(34px, 7vw, 68px);
-
-      line-height: 1.15;
-
-      font-weight: 900;
-
-      margin-bottom: 24px;
-
-    }
-
-    h1 span {
-
-      color: #ff2a23;
-
-    }
-
-    .hero p {
-
-      max-width: 650px;
-
-      font-size: clamp(16px, 3vw, 20px);
-
-      color: #eeeeee;
-
-    }
-
-    .hero-note {
-
-      margin-top: 30px;
-
-      display: inline-block;
-
-      border: 1px solid #777;
-
-      padding: 12px 18px;
-
-      font-weight: bold;
-
-      background: rgba(0,0,0,0.65);
-
-    }
-
-    /* セクション共通 */
-
-    section {
-
-      padding: 85px 0;
-
-    }
-
-    .section-title {
-
-      font-size: clamp(28px, 6vw, 46px);
-
-      line-height: 1.25;
-
-      margin-bottom: 18px;
-
-      font-weight: 900;
-
-    }
-
-    .section-title span {
-
-      color: #e10600;
-
-    }
-
-    .lead {
-
-      color: #cfcfcf;
-
-      max-width: 760px;
-
-      margin-bottom: 45px;
-
-    }
-
-    /* 悩み */
-
-    .problem {
-
-      background: #151515;
-
-    }
-
-    .problem-grid {
-
-      display: grid;
-
-      grid-template-columns: repeat(3, 1fr);
-
-      gap: 20px;
-
-    }
-
-    .problem-card {
-
-      background: #202020;
-
-      padding: 30px 24px;
-
-      border-top: 4px solid #e10600;
-
-    }
-
-    .problem-card h3 {
-
-      margin-bottom: 12px;
-
-      font-size: 20px;
-
-    }
-
-    .problem-card p {
-
-      color: #bbbbbb;
-
-      font-size: 15px;
-
-    }
-
-    /* コンセプト */
-
-    .concept {
-
-      background: #080808;
-
-    }
-
-    .concept-box {
-
-      display: grid;
-
-      grid-template-columns: 1fr 1fr;
-
-      gap: 45px;
-
-      align-items: center;
-
-    }
-
-    .concept-image img {
-
-      width: 100%;
-
-      height: 440px;
-
-      object-fit: cover;
-
-    }
-
-    .concept-text h3 {
-
-      font-size: 28px;
-
-      margin-bottom: 20px;
-
-    }
-
-    .concept-text p {
-
-      color: #cccccc;
-
-      margin-bottom: 15px;
-
-    }
-
-    /* 強み */
-
-    .strength {
-
-      background: #151515;
-
-    }
-
-    .strength-list {
-
-      display: grid;
-
-      grid-template-columns: repeat(2, 1fr);
-
-      gap: 20px;
-
-    }
-
-    .strength-item {
-
-      padding: 30px;
-
-      border: 1px solid #333;
-
-      background: #0d0d0d;
-
-    }
-
-    .number {
-
-      color: #e10600;
-
-      font-size: 40px;
-
-      font-weight: 900;
-
-    }
-
-    .strength-item h3 {
-
-      font-size: 21px;
-
-      margin-bottom: 10px;
-
-    }
-
-    .strength-item p {
-
-      color: #bbb;
-
-    }
-
-    /* サービス */
-
-    .service {
-
-      background: #080808;
-
-    }
-
-    .service-list {
-
-      display: grid;
-
-      grid-template-columns: repeat(3, 1fr);
-
-      gap: 20px;
-
-    }
-
-    .service-card {
-
-      background: #191919;
-
-      padding: 28px;
-
-    }
-
-    .service-card h3 {
-
-      color: #ffffff;
-
-      margin-bottom: 10px;
-
-      font-size: 20px;
-
-    }
-
-    .service-card p {
-
-      color: #bbbbbb;
-
-      font-size: 15px;
-
-    }
-
-    /* 方針 */
-
-    .policy {
-
-      background: #e10600;
-
-      color: #fff;
-
-      text-align: center;
-
-    }
-
-    .policy h2 {
-
-      font-size: clamp(28px, 6vw, 48px);
-
-      margin-bottom: 20px;
-
-      line-height: 1.3;
-
-    }
-
-    .policy p {
-
-      max-width: 720px;
-
-      margin: auto;
-
-      font-size: 17px;
-
-    }
-
-    /* 問い合わせ */
-
-    .contact {
-
-      text-align: center;
-
-      background: #111;
-
-    }
-
-    .contact-box {
-
-      max-width: 700px;
-
-      margin: auto;
-
-      padding: 45px 25px;
-
-      border: 1px solid #333;
-
-    }
-
-    .contact-box h2 {
-
-      font-size: 32px;
-
-      margin-bottom: 15px;
-
-    }
-
-    .preparing {
-
-      display: inline-block;
-
-      background: #333;
-
-      padding: 12px 25px;
-
-      margin-top: 25px;
-
-      border-radius: 5px;
-
-      font-weight: bold;
-
-      color: #ddd;
-
-    }
-
-    footer {
-
-      padding: 35px 15px;
-
-      text-align: center;
-
-      color: #777;
-
-      background: #050505;
-
-      font-size: 13px;
-
-    }
-
-    /* スマホ */
-
-    @media (max-width: 760px) {
-
-      .hero {
-
-        min-height: 70vh;
-
-      }
-
-      .hero-content {
-
-        padding: 60px 0;
-
-      }
-
-      .problem-grid,
-
-      .strength-list,
-
-      .service-list,
-
-      .concept-box {
-
-        grid-template-columns: 1fr;
-
-      }
-
-      .concept-image img {
-
-        height: 280px;
-
-      }
-
-      section {
-
-        padding: 65px 0;
-
-      }
-
-    }
-
-  </style>
+</style>
 
 </head>
 
@@ -608,433 +122,223 @@
 
 <header>
 
-  <div class="header-inner">
+<div class="header-inner">
 
-    <div class="logo">
+<div class="logo">MOTORCYCLE <span>REPAIR</span></div>
 
-      MOTORCYCLE <span>REPAIR</span>
+<div class="status">準備中</div>
 
-    </div>
-
-    <div class="status">
-
-      準備中
-
-    </div>
-
-  </div>
+</div>
 
 </header>
 
 <main>
 
-  <!-- トップ -->
+<section class="hero">
 
-  <section class="hero">
+<div class="container">
 
-    <div class="container">
+<div class="hero-content">
 
-      <div class="hero-content">
+<div class="hero-tag">バイク修理・整備専門</div>
 
-        <div class="hero-tag">
+<h1>売るためではなく、<br><span>乗り続けるための整備。</span></h1>
 
-          バイク修理・整備専門
+<p>
 
-        </div>
+バイク屋は入りづらい。<br>
 
-        <h1>
+どこに修理を頼めばいいか分からない。<br><br>
 
-          売るためではなく、<br>
+そんな初心者の方や、修理を断られて困っている方のための
 
-          <span>乗り続けるための整備。</span>
+バイク修理・整備専門ショップを目指しています。
 
-        </h1>
+</p>
 
-        <p>
+<div class="hero-note">現在 開業準備中</div>
 
-          バイク屋は入りづらい。<br>
+</div>
 
-          どこに修理を頼めばいいか分からない。<br><br>
+</div>
 
-          そんな初心者の方や、
+</section>
 
-          修理を断られて困っている方のための
+<section class="problem">
 
-          バイク修理・整備専門ショップを目指しています。
+<div class="container">
 
-        </p>
+<h2 class="section-title">こんなことで<span>困っていませんか？</span></h2>
 
-        <div class="hero-note">
+<p class="lead">バイクに詳しくなくても大丈夫です。分からないことを分からないままにしない。それが私たちの考える整備です。</p>
 
-          現在 開業準備中
+<div class="problem-grid">
 
-        </div>
+<div class="problem-card">
 
-      </div>
+<h3>バイク屋に入りづらい</h3>
 
-    </div>
+<p>専門用語が分からなくても大丈夫。状態を確認しながら分かりやすく説明します。</p>
 
-  </section>
+</div>
 
-  <!-- 悩み -->
+<div class="problem-card">
 
-  <section class="problem">
+<h3>修理を断られてしまった</h3>
 
-    <div class="container">
+<p>年式や状態を確認し、まず「どうすれば直せるか」を考えます。</p>
 
-      <h2 class="section-title">
+</div>
 
-        こんなことで<span>困っていませんか？</span>
+<div class="problem-card">
 
-      </h2>
+<h3>もっと乗りやすくしたい</h3>
 
-      <p class="lead">
+<p>ただ修理するだけではなく、乗る人に合わせたバイク作りを考えます。</p>
 
-        バイクに詳しくなくても大丈夫です。
+</div>
 
-        分からないことを分からないままにしない。
+</div>
 
-        それが私たちの考える整備です。
+</div>
 
-      </p>
+</section>
 
-      <div class="problem-grid">
+<section class="concept">
 
-        <div class="problem-card">
+<div class="container">
 
-          <h3>バイク屋に入りづらい</h3>
+<div class="concept-box">
 
-          <p>
+<div class="concept-image">
 
-            専門用語が分からなくても大丈夫。
+<img src="IMG_6133.jpeg" alt="バイクのエンジン整備作業">
 
-            状態を確認しながら、できるだけ分かりやすく説明します。
+</div>
 
-          </p>
+<div class="concept-text">
 
-        </div>
+<h2 class="section-title">修理には、<span>理由がある。</span></h2>
 
-        <div class="problem-card">
+<p>なぜ壊れたのか。なぜこの調整が必要なのか。なぜこの部品を交換するのか。</p>
 
-          <h3>修理を断られてしまった</h3>
+<p>一つ一つの理由を考え、バイクの状態と乗る人に合わせて整備します。</p>
 
-          <p>
+<p>長年のバイク整備とレース現場で培った経験を、一般のライダーのバイクにも活かします。</p>
 
-            年式や状態などを確認し、
+</div>
 
-            まず「どうすれば直せるか」を考えます。
+</div>
 
-          </p>
+</div>
 
-        </div>
+</section>
 
-        <div class="problem-card">
+<section class="strength">
 
-          <h3>もっと乗りやすくしたい</h3>
+<div class="container">
 
-          <p>
+<h2 class="section-title">私たちが<span>大切にすること</span></h2>
 
-            ただ修理するだけではなく、
+<div class="strength-list">
 
-            乗る人に合わせたバイク作りを考えます。
+<div class="strength-item"><div class="number">01</div><h3>原因を考える</h3><p>症状だけでなく、なぜ起きているのかを考えます。</p></div>
 
-          </p>
+<div class="strength-item"><div class="number">02</div><h3>分かりやすく説明する</h3><p>整備の知識がなくても理解できる説明を心掛けます。</p></div>
 
-        </div>
+<div class="strength-item"><div class="number">03</div><h3>乗る人に合わせる</h3><p>体格・経験・用途に合わせ、乗りやすい一台を考えます。</p></div>
 
-      </div>
+<div class="strength-item"><div class="number">04</div><h3>販売より整備</h3><p>今あるバイクを大切に乗り続けるための整備を重視します。</p></div>
 
-    </div>
+</div>
 
-  </section>
+</div>
 
-  <!-- コンセプト -->
+</section>
 
-  <section class="concept">
+<section class="works">
 
-    <div class="container">
+<div class="container">
 
-      <div class="concept-box">
+<h2 class="section-title">整備・修理の<span>作業実績</span></h2>
 
-        <div class="concept-image">
+<p class="lead">エンジン内部から車体整備まで、状態と原因を確認しながら一台ずつ向き合います。</p>
 
-          <img
+<div class="gallery">
 
-            src="IMG_6133.jpeg"
+<figure><img src="IMG_5813.png" alt="エンジン整備" loading="lazy"><figcaption>エンジン整備</figcaption></figure>
 
-            alt="バイク整備・修理作業"
+<figure><img src="IMG_6018.jpeg" alt="バイク修理" loading="lazy"><figcaption>修理・点検</figcaption></figure>
 
-          >
+<figure><img src="IMG_4517.jpeg" alt="エンジン分解整備" loading="lazy"><figcaption>分解整備</figcaption></figure>
 
-        </div>
+<figure><img src="IMG_4422.jpeg" alt="バイク車両整備" loading="lazy"><figcaption>車両整備</figcaption></figure>
 
-        <div class="concept-text">
+<figure><img src="IMG_2879.jpeg" alt="精密部品の点検" loading="lazy"><figcaption>部品点検</figcaption></figure>
 
-          <h2 class="section-title">
+<figure><img src="IMG_2846.jpeg" alt="レース車両整備" loading="lazy"><figcaption>レース車両</figcaption></figure>
 
-            修理には、<span>理由がある。</span>
+</div>
 
-          </h2>
+</div>
 
-          <h3>
+</section>
 
-            部品を交換するだけの整備ではありません。
+<section class="service">
 
-          </h3>
+<div class="container">
 
-          <p>
+<h2 class="section-title">対応予定の<span>サービス</span></h2>
 
-            なぜ壊れたのか。
+<p class="lead">車両の状態を確認したうえで必要な整備をご提案します。</p>
 
-            なぜこの調整が必要なのか。
+<div class="service-list">
 
-            なぜこの部品を交換するのか。
+<div class="service-card"><h3>点検・一般整備</h3><p>オイル交換、消耗品交換、日常点検など。</p></div>
 
-          </p>
+<div class="service-card"><h3>故障診断・修理</h3><p>エンジン・電装・足回りなど、症状から原因を確認します。</p></div>
 
-          <p>
+<div class="service-card"><h3>乗りやすさの改善</h3><p>ライダーに合わせた調整やセッティングを考えます。</p></div>
 
-            一つ一つの理由を考え、
+</div>
 
-            バイクの状態と乗る人に合わせて整備する。
+</div>
 
-          </p>
+</section>
 
-          <p>
+<section class="policy">
 
-            長年のバイク整備とレース現場で培った経験を、
+<div class="container">
 
-            一般のライダーのバイクにも活かします。
+<h2>「バイク屋は怖い」から、<br>「ここなら聞ける」へ。</h2>
 
-          </p>
+<p>初心者でも、ベテランでも、バイクを大切にしたい気持ちは同じです。<br>敷居が低く、困った時に相談できる。そんなバイクショップを目指します。</p>
 
-        </div>
+</div>
 
-      </div>
+</section>
 
-    </div>
+<section class="contact">
 
-  </section>
+<div class="container">
 
-  <!-- 強み -->
+<div class="contact-box">
 
-  <section class="strength">
+<h2>お問い合わせ</h2>
 
-    <div class="container">
+<p>現在、開業準備中のためお問い合わせ受付を停止しています。</p>
 
-      <h2 class="section-title">
+<div class="preparing">COMING SOON</div>
 
-        私たちが<span>大切にすること</span>
+</div>
 
-      </h2>
+</div>
 
-      <div class="strength-list">
-
-        <div class="strength-item">
-
-          <div class="number">01</div>
-
-          <h3>原因を考える</h3>
-
-          <p>
-
-            症状だけを見るのではなく、
-
-            なぜその症状が起きているのかを考えます。
-
-          </p>
-
-        </div>
-
-        <div class="strength-item">
-
-          <div class="number">02</div>
-
-          <h3>分かりやすく説明する</h3>
-
-          <p>
-
-            整備の知識がなくても理解できる説明を心掛けます。
-
-          </p>
-
-        </div>
-
-        <div class="strength-item">
-
-          <div class="number">03</div>
-
-          <h3>乗る人に合わせる</h3>
-
-          <p>
-
-            体格・経験・用途などに合わせ、
-
-            乗りやすいバイクを一緒に考えます。
-
-          </p>
-
-        </div>
-
-        <div class="strength-item">
-
-          <div class="number">04</div>
-
-          <h3>販売より整備</h3>
-
-          <p>
-
-            バイク販売を目的にするのではなく、
-
-            今あるバイクを大切に乗り続けるための整備を重視します。
-
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- サービス -->
-
-  <section class="service">
-
-    <div class="container">
-
-      <h2 class="section-title">
-
-        対応予定の<span>サービス</span>
-
-      </h2>
-
-      <p class="lead">
-
-        車両の状態を確認したうえで、
-
-        必要な整備をご提案します。
-
-      </p>
-
-      <div class="service-list">
-
-        <div class="service-card">
-
-          <h3>点検・一般整備</h3>
-
-          <p>
-
-            オイル交換、消耗品交換、
-
-            日常点検など。
-
-          </p>
-
-        </div>
-
-        <div class="service-card">
-
-          <h3>故障診断・修理</h3>
-
-          <p>
-
-            エンジン・電装・足回りなど、
-
-            症状から原因を確認します。
-
-          </p>
-
-        </div>
-
-        <div class="service-card">
-
-          <h3>乗りやすさの改善</h3>
-
-          <p>
-
-            ライダーに合わせた調整や
-
-            セッティングを考えます。
-
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- メッセージ -->
-
-  <section class="policy">
-
-    <div class="container">
-
-      <h2>
-
-        「バイク屋は怖い」から、<br>
-
-        「ここなら聞ける」へ。
-
-      </h2>
-
-      <p>
-
-        初心者でも、ベテランでも、
-
-        バイクを大切にしたい気持ちは同じです。<br><br>
-
-        敷居が低く、困った時に相談できる。
-
-        そんなバイクショップを目指します。
-
-      </p>
-
-    </div>
-
-  </section>
-
-  <!-- 問い合わせ -->
-
-  <section class="contact">
-
-    <div class="container">
-
-      <div class="contact-box">
-
-        <h2>お問い合わせ</h2>
-
-        <p>
-
-          現在、開業準備中のため
-
-          お問い合わせ受付を停止しています。
-
-        </p>
-
-        <div class="preparing">
-
-          COMING SOON
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
+</section>
 
 </main>
 
-<footer>
-
-  © MOTORCYCLE REPAIR
-
-</footer>
+<footer>© MOTORCYCLE REPAIR</footer>
 
 </body>
 
